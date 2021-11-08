@@ -49,5 +49,8 @@ Create Resource[y/n]n
 Create Controller[y/n]y
 ```
 
+```
+make manifests
+```
 
 ## Code Generator

@@ -32,3 +32,29 @@ rules:
   - get
   - patch
   - update
+- apiGroups:
+  - flux.kubernetes.io
+  resources:
+  - pods
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - flux.kubernetes.io
+  resources:
+  - pods/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - flux.kubernetes.io
+  resources:
+  - pods/status
+  verbs:
+  - get
+  - patch
+  - update
