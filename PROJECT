@@ -4,4 +4,14 @@ layout:
 multigroup: true
 projectName: delta-operator
 repo: kubernetes.io/delta-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kubernetes.io
+  group: flux
+  kind: PodInfo
+  path: kubernetes.io/delta-operator/apis/flux/v1alpha1
+  version: v1alpha1
 version: "3"

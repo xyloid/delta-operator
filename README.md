@@ -23,8 +23,15 @@ kubebuilder edit --multigroup=true
 ### Generate Resources and Manifests
 
 ```bash
-kubebuilder create api --group kubeflux --version v1 --kind PodInfo
+kubebuilder create api --group flux --version v1alpha1 --kind PodInfo
+
+Create Resource[y/n]y
+
+Create Controller[y/n]y
+
 ```
+
+
 **Edit type**
 
 ```
