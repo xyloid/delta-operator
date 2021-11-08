@@ -41,3 +41,13 @@ make manifests
 
 ## Pod Controller
 
+```bash
+kubebuilder create api --group flux --version v1alpha1 --kind Pod
+
+Create Resource[y/n]n
+
+Create Controller[y/n]y
+```
+
+
+## Code Generator
