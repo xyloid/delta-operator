@@ -20,7 +20,7 @@ spec:
   template:
     metadata:
       annotations:
-        kubectl.kubernetes.io/default-container: manager
+        kubectl.fluxdev.io/default-container: manager
       labels:
         control-plane: controller-manager
     spec:
@@ -48,7 +48,7 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 10
         # TODO(user): Configure the resources accordingly based on the project requirements.
-        # More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+        # More info: https://fluxdev.io/docs/concepts/configuration/manage-resources-containers/
         resources:
           limits:
             cpu: 500m

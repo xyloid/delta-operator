@@ -24,7 +24,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	fluxv1alpha1 "kubernetes.io/delta-operator/apis/flux/v1alpha1"
+	fluxv1alpha1 "fluxdev.io/delta-operator/apis/flux/v1alpha1"
 )
 
 // PodInfoReconciler reconciles a PodInfo object
@@ -33,9 +33,9 @@ type PodInfoReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=flux.kubernetes.io,resources=podinfoes,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=flux.kubernetes.io,resources=podinfoes/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=flux.kubernetes.io,resources=podinfoes/finalizers,verbs=update
+//+kubebuilder:rbac:groups=flux.fluxdev.io,resources=podinfoes,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=flux.fluxdev.io,resources=podinfoes/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=flux.fluxdev.io,resources=podinfoes/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.

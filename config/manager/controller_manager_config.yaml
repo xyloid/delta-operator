@@ -8,4 +8,4 @@ webhook:
   port: 9443
 leaderElection:
   leaderElect: true
-  resourceName: b6a3c1a7.kubernetes.io
+  resourceName: b6a3c1a7.fluxdev.io

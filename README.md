@@ -14,9 +14,9 @@ type PodInfo struct {
 ### Initialize Project
 
 ```bash
-MODULE=kubernetes.io/delta-operator
+MODULE=fluxdev.io/delta-operator
 go mod init $MODULE
-kubebuilder init --domain kubernetes.io
+kubebuilder init --domain fluxdev.io
 kubebuilder edit --multigroup=true
 ```
 
@@ -49,8 +49,14 @@ Create Resource[y/n]n
 Create Controller[y/n]y
 ```
 
-```
+```bash
 make manifests
+```
+
+Modify `pod_controller.go`
+
+```bash
+go get k8s.io/api/core/v1@v0.22.1
 ```
 
 ## Code Generator

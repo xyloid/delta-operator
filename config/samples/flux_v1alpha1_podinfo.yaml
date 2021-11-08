@@ -1,4 +1,4 @@
-apiVersion: flux.kubernetes.io/v1alpha1
+apiVersion: flux.fluxdev.io/v1alpha1
 kind: PodInfo
 metadata:
   name: podinfo-sample

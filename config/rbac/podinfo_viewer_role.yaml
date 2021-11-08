@@ -5,7 +5,7 @@ metadata:
   name: podinfo-viewer-role
 rules:
 - apiGroups:
-  - flux.kubernetes.io
+  - flux.fluxdev.io
   resources:
   - podinfoes
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - flux.kubernetes.io
+  - flux.fluxdev.io
   resources:
   - podinfoes/status
   verbs:
