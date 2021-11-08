@@ -1,0 +1,6 @@
+domain: kubernetes.io
+layout:
+- go.kubebuilder.io/v3
+projectName: delta-operator
+repo: kubernetes.io/delta-operator
+version: "3"
