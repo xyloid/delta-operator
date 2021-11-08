@@ -14,4 +14,9 @@ resources:
   kind: PodInfo
   path: kubernetes.io/delta-operator/apis/flux/v1alpha1
   version: v1alpha1
+- controller: true
+  domain: kubernetes.io
+  group: flux
+  kind: Pod
+  version: v1alpha1
 version: "3"
